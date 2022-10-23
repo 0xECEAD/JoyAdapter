@@ -14,22 +14,20 @@ The LED flashes on connect and movement/button action.
 
 ## PCB:
 
-![pcb](Img/board.jpg)
+schematic: [pdf](Board/schema.pdf)
+![pcb](Img/board.png)
 
 ### Pinout J1 Atari:
 Connector  [Wikipedia](https://en.wikipedia.org/wiki/Atari_joystick_port)
 
-| Pin | Function |
-| ------ | ------ |
-| 1 | Up |
-| 2 | Down |
-| 3 | Left |
-| 4 | Right |
+| Pin | Function | Pin | Function |
+| ------ | ------ | ------ | ------ |
+| 1 | Up | 6 | Button 1 |
+| 2 | Down | 7 | +5V |
+| 3 | Left | 8 | Ground |
+| 4 | Right | 9 | Button 2 |
 | 5 | N.C. |
-| 6 | Button 1 |
-| 7 | +5V |
-| 8 | Ground |
-| 9 | Button 2 |
+
 
 **Note:** +5V on pin 7 (not fused or limitied or protected) can damage you USB host if shorted.
 5V is not required for most (passive) joysticks i know, so you could pull pin 7 the out of the connector to be safe.
@@ -44,15 +42,15 @@ Connector  [Wikipedia](https://en.wikipedia.org/wiki/Atari_joystick_port)
 |1|D1|L-424IDT|Kingbright|FlatTop|[pdf](https://nl.mouser.com/datasheet/2/216/L-424IDT(Ver.12A)-795377.pdf)|
 |1|H1|MountingHole||2.5mm||
 |1|J1|DB9 Male||Solder Straight, shell removed||
-|1|J3|USB PLUG Type "A"|Keystone Electronics|SMD|[pdf](https://www.mouser.com/datasheet/2/215/31-744008.pdf)|
+|1|J3|USB PLUG Type A|Keystone Electronics|SMD|[pdf](https://www.mouser.com/datasheet/2/215/31-744008.pdf)|
 |2|J4, J5|Connector 1x2||pitch 1.27mm||
 |1|R1|68Ω||||
 |1|U1|XC6220B331MR|Torex Semiconductor||[pdf](https://www.torexsemi.com/file/xc6220/XC6220.pdf)|
-|1|U2|STM32F042G6Ux|STMicroelectronics|Package QFN28 4x4mm|[pdf](http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00105814.pdf)|
+|1|U2|STM32F042G6Ux|STMicroelectronics|QFN28 4x4mm|[pdf](http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00105814.pdf)|
 
 Notes: 
 - The J1 shell is actually a **DE**-type (common mistake, even KiCad fails this)
-- Any low-drop voltage regulator for U1, (SOT23-5 package), either 3V or 3V3, e.q. XC6220B331MR or AP7383-30W5.
+- Any low-drop voltage regulator for U1 (SOT23-5 package) either 3V or 3V3, e.q. XC6220B331MR or AP7383-30W5.
 - U2 is a STM32F042G6Ux controller, it features crystal-less USB, and 5V tolerant inputs.
 - The SWD programming connector was split into two, J4 and J5 due to size restrictions.
 
@@ -61,7 +59,7 @@ Notes:
 
 ![pcb](Img/JoyAdapterD08.png)
 
-Manufacture the PCB with FR4 thickness 1.2mm. (Standard 1.6mm will not fit between the pins of J1).
+Manufacture the PCB with FR4 thickness 1.2mm. (Normal 1.6mm will not fit between the pins of J1).
 
 J1 is a standard DSUB 9pin Male connector. Remove the shell with cutters and pliers and some force.
 The remaining inner part can be mounted with the PCB between the pins. 
@@ -89,15 +87,15 @@ In theory you could send at 1kHz for LowSpeed USB or 8kHz for FullSpeed USB, but
 Current implementation thus updates every change in a 10ms interval, faster then most screen refresh rates of retro games. 
 
 
-### Compatibility
+## Compatibility
 Windows 98/XP/Vista/7/8/10/11, Mac OSX, Linux, RaspberryPI, MiSTer. 
 
 
-## Tested Devices
+### Tested Devices
 The Arcade by S.T.C. Rotterdam
 
 
-## Design Software
+### Design Software
 
 KiCad v6.0.7 + GerberView v2.6.1
 FreeCAD v0.19
@@ -107,4 +105,5 @@ Descriptor Tool, Version 2.4
 VisualGDB v5.6r8 + STM CubeMX v6.5
 
 
-[[Img/JoyAdapter.mkv]]
+### Demo
+![movie](Img/JoyAdapter.mkv)
