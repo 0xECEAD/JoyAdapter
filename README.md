@@ -1,4 +1,4 @@
-# JoyAdapter (c) 2019 Enceladus 
+# JoyAdapter
 
 Another 8-bit Atari Joystick to USB adapter.
 
@@ -106,4 +106,7 @@ VisualGDB v5.6r8 + STM CubeMX v6.5
 
 
 ### Demo
-![movie](Img/JoyAdapter.mkv)
+![movie](Img/JoyAdapter.gif)
+
+## Credits
+(c) 2019 Enceladus 
