@@ -1,0 +1,38 @@
+"Source:","D:\tmp\JoyAdapter.kicad_sch"
+"Date:","19/10/2022 13:25:23"
+"Tool:","Eeschema (6.0.7)"
+"Generator:","D:\Tools\KiCad\bin\scripting\plugins/bom_csv_grouped_by_value.py"
+"Component Count:","12"
+
+"Individual Components:"
+
+"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet"
+"","","C1","4u7F","Device:C_Polarized","","~"
+"","","C2","1uF","Device:C","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"","","C3","100nF","Device:C","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"","","D1","L-424IDT","Device:LED","LED_THT:LED_D3.0mm_FlatTop","~"
+"","","H1","MountingHole","Mechanical:MountingHole","MountingHole:MountingHole_2.5mm","~"
+"","","J1","DB9_Male","Connector:DB9_Male","Parts:DSUB-9_Male_EdgeMount_P2.77mm"," ~"
+"","","J3","USB_B","Connector:USB_B","Parts:USB_A_Lumberg_2410-08"," ~"
+"","","J4","Conn_01x02","Connector_Generic:Conn_01x02","Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical","~"
+"","","J5","Conn_01x02","Connector_Generic:Conn_01x02","Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical","~"
+"","","R1","68","Device:R","Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"","","U1","XC6220B331MR","Regulator_Linear:XC6220B331MR","Package_TO_SOT_SMD:SOT-23-5","https://www.torexsemi.com/file/xc6220/XC6220.pdf"
+"","","U2","STM32F042G6Ux","MCU_ST_STM32F0:STM32F042G6Ux","Package_DFN_QFN:QFN-28_4x4mm_P0.5mm","http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00105814.pdf"
+
+
+
+"Collated Components:"
+
+"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet"
+"1","1","C1","4u7F","Device:C_Polarized","","~"
+"2","1","C2","1uF","Device:C","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"3","1","C3","100nF","Device:C","Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"4","1","D1","L-424IDT","Device:LED","LED_THT:LED_D3.0mm_FlatTop","~"
+"5","1","H1","MountingHole","Mechanical:MountingHole","MountingHole:MountingHole_2.5mm","~"
+"6","1","J1","DB9_Male","Connector:DB9_Male","Parts:DSUB-9_Male_EdgeMount_P2.77mm"," ~"
+"7","1","J3","USB_B","Connector:USB_B","Parts:USB_A_Lumberg_2410-08"," ~"
+"8","2","J4, J5","Conn_01x02","Connector_Generic:Conn_01x02","Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical","~"
+"9","1","R1","68","Device:R","Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~"
+"10","1","U1","XC6220B331MR","Regulator_Linear:XC6220B331MR","Package_TO_SOT_SMD:SOT-23-5","https://www.torexsemi.com/file/xc6220/XC6220.pdf"
+"11","1","U2","STM32F042G6Ux","MCU_ST_STM32F0:STM32F042G6Ux","Package_DFN_QFN:QFN-28_4x4mm_P0.5mm","http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00105814.pdf"
